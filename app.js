@@ -43,12 +43,14 @@ function Hero() {
 
 function TextArea() {
     return (
-        <div className="text__container">
-            <h1 className="text__headline">We're</h1>
-            <h2 className="text__subheadline"><span className="text__break">coming</span>soon</h2>
-            <p className="text"> Hello fellow shoppers! We're currently building our new fashion store. 
-                Add your email below to stay up-to-date with announcements and our launch deals</p>
+        <div className="text__form__container">
+            <div className="text__container">
+                <h1 className="text__headline">We're</h1>
+                <h2 className="text__subheadline"><span className="text__subheadline__break">coming</span>soon</h2>
+                <p className="text"> Hello fellow shoppers! We're currently building our new fashion store. 
+                    Add your email below to stay up-to-date with announcements and our launch deals</p>
                 <Form/>
+            </div>
         </div>
     )
 }

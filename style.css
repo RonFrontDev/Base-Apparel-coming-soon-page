@@ -18,6 +18,8 @@ html {
     font-family: var(--josefin);
 }
 
+
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -30,20 +32,32 @@ html {
 .logo__container {
     padding: 20px;
 }
+.hero__container {
+    max-width: 100%;
+}
 
 .hero {
     object-fit: cover;
     width: 100%;
 }
 
+.text__form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .text__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    max-width: 100%;
+    
 }
 
 .text__headline {
+    padding-top:30px ;
     text-transform: uppercase;
     letter-spacing: 10px;
     color: var(--desaturated-red);
@@ -59,28 +73,42 @@ html {
     font-weight: 500;
     letter-spacing: 5px;
     line-height: 3rem;
-    overflow-wrap: break-word;
+}
+.text__subheadline__break {
+    display: block;
 }
 .text {
-color: var(--desaturated-red);
-font-size: 1rem;
-text-align: center;
-line-height: 1.5;
+    color: var(--desaturated-red);
+    font-size: .9rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px 40px 30px;
 }
 
 .form {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    width: 100%;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+.form__label {
+    display: block;
+    height: 0;
+    width: 0;
 }
 .form__input {
-    max-height: 50px;
-    width: 300px;
-    padding: 15px;
+    min-height: 50px;
     border-radius:30px;
     border: 1px solid var(--desaturated-red);
-    position: relative;
-    float: right;
+    min-width: 300px;
+    width: 100%;
+    
+}
+.form__input:focus {
+    background-color:rgb(246, 165, 192);
 }
 
 .form__input::placeholder {
@@ -93,14 +121,15 @@ line-height: 1.5;
 }
 
 .form__button {
-    display: flex;
-    position: relative;
-    right: 70px;
-    top: 0;
-    bottom: 0;
+    display: block;
+    position: absolute;
+    right: 30px;
+    /* top: 0; */
+    /* bottom: 0; */
     padding: 14px 30px;
     border-radius:30px;
     border: none;
+    background-color: rgba(102, 51, 153, 0.122);
     background-image: linear-gradient(to right, #ff708191 0%, 51%, #f88996  100%);
 }
 
@@ -152,7 +181,7 @@ line-height: 1.5;
     .form__button {
         display: flex;
         position: relative;
-        right: 60px;
+        right: 90px;
         top: 0;
         bottom: 0;
         padding: 14px 40px;
