@@ -97,11 +97,8 @@ function Form() {
                     onChange={(event) => setEmail(event.target.value)}
                 />
                 {emailError && <p className="form__message">{emailError}</p>}
-<<<<<<< HEAD
                 <button onClick={refreshPage}  className="form__button" type="submit"><img className="form__icon" src="images/icon-arrow.svg" alt="" /></button>
-=======
-                 <button onClick={refreshPage}  className="form__button" type="submit"><img className="form__icon" src="images/icon-arrow.svg" alt="" /></button>
->>>>>>> bd3316bfe1d7177646e3e1ac88ed8a222acd67bd
+
               </form>
             );
 }
